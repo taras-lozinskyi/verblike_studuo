@@ -68,7 +68,7 @@ a {
 
 .slick-arrow {
   position: absolute;
-  right: -22px;
+  right: 2px;
   top: calc(50% - 40px);
   background: white;
   display: flex !important;
@@ -105,7 +105,7 @@ align-items: center;
 
 }
 .slick-arrow.slick-prev {
-  left: -25px;
+  left: -6px;
 
   
 }
