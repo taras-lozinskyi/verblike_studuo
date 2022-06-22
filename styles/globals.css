@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
     font-family: Montserrat ,sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -18,31 +19,25 @@ a {
   box-sizing: border-box;
 }
 
-.point-top{
+.point-top, .point-down{
   background-image: radial-gradient(#e2ecf9 15% ,transparent 25%);
     background-size: 20px 20px;
     position: absolute;
     content: "";
     width: 800px;
     height: 225px;
-    z-index: 1;
+    z-index: -1;
     right: 60%;
     margin-left: -412px;
     top: 0;
     margin-top: 5px;
 }
 .point-down{
-  background-image: radial-gradient(#e2ecf9 15% ,transparent 25%);
-    background-size: 20px 20px;
-    position: absolute;
-    content: "";
-    width: auto;
-    z-index: 1;
-    height: 200px;
     left: 50%;
     margin-left: 195px;
     bottom: 0;
     margin-bottom: 50px;
+    top: auto;
 }
 
 .popular .slick-slide{
@@ -51,7 +46,7 @@ a {
 
 .slick-slider{
   overflow: clip;
-
+  overflow-clip-margin: 5px;
 }
 
 .slick-track{
@@ -126,7 +121,6 @@ align-items: center;
 }
 .slick-arrow.slick-prev {
   left: -6px;
-
   
 }
 

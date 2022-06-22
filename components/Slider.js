@@ -6,6 +6,7 @@ import Slide from "./Slide";
 export default function SimpleSlider(props) {
         var settings = {
         infinite: false,
+        initialSlide: 2,
         draggable:false,
         slidesToShow: props.popular?2:4,
         responsive: [
@@ -40,9 +41,7 @@ export default function SimpleSlider(props) {
   return (
       <Slider {...settings}>
         {props.data.map((item2) => (
-          
-             
-            <Slide {...item2} popular={props.title === "Popular"}/>
+            <Slide key={item2} {...item2} popular={props.title === "Popular"}/>
         
         ))}
       </Slider>
